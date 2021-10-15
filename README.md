@@ -26,4 +26,4 @@ File upload vulnerability allows us to upload any type of file (even the malicio
 
 ### > Internal Portal Publicly accessible
 #### Severity: Medium
-The internal web portal is publicly accessible on 
+The internal web portal is publicly accessible and may result in sensitive data exposure. These portals must be accessible only on the local network.
