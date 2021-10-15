@@ -9,4 +9,5 @@ The vulnerable machine I made is a beginner friendly CTF- machine. A CTF stands 
 
 #### My Virtual Machine Setup
 I used the latest Ubuntu version(Ubuntu 20.04 LTS) as victim machine.
+
 Kali linux 2021.1 as attacker machine.
