@@ -1,7 +1,7 @@
 # Pokemon_CTF
 #### A beginer level CTF.
 
-[Find rhe machine here](https://drive.google.com/file/d/1bZNuZXk_sBt9kNg0uuFez4Xti6Grf9tr/view?usp=sharing "Named link title")
+[Find the machine here](https://drive.google.com/file/d/1bZNuZXk_sBt9kNg0uuFez4Xti6Grf9tr/view?usp=sharing "Named link title")
 
 
 ## About The Machine
