@@ -1,5 +1,5 @@
 # Pokemon_CTF
-#### A beginer level CTF.
+#### A begginer level CTF.
 
 [Find the machine here](https://drive.google.com/file/d/1bZNuZXk_sBt9kNg0uuFez4Xti6Grf9tr/view?usp=sharing "Named link title")
 
